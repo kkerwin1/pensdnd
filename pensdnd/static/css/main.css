@@ -1,8 +1,193 @@
-body {
-  background-color: lightblue;
+/*
+Color palette
+
+Visual: https://icolorpalette.com/5f894f_fefdfc_c82529_001c27_fff12c
+
+Base Colors
+
+Hippie Green	White		Red			Black		Yellow
+------------	-----		---			-----		------
+#5F894F				#FEFDFC	#C82529	#001C27	#FFF12C
+
+Lighter shades of the above (blue is the lighter black, brown is the lighter
+white), with lighter at the top, and darker at the bottom.
+
+Light Green
+-----------
+#bdd4b4
+#a9c79d
+#95b987
+#81ac70
+#6d9e5b
+#5e874e
+#4e7141
+#3e5a34
+#2f4327
+#1f2d1a
+
+L brown
+-------
+#e1c4a7
+#d8b28c
+#cfa071
+#c68e56
+#bb7c3e
+#a06b35
+#85592c
+#6b4723
+#50351a
+#352311
+
+L Red
+-----
+#ec9c9d
+#e77d80
+#e15f62
+#db4145
+#d2272b
+#b42125
+#961b1e
+#781618
+#5a1012
+#3c0b0c
+
+L Blue
+------
+#89ddff
+#66d3ff
+#42c9ff
+#1ebfff
+#00b3f9
+#0099d6
+#0080b2
+#00668e
+#004c6b
+#003347
+
+L Yellow
+--------
+#fff789
+#fff466
+#fff242
+#fff01e
+#f9e900
+#d6c700
+#b2a600
+#8e8500
+#6b6300
+#474200
+
+*/
+
+a {
+	color: #FFF12C;
+}
+
+a:hover {
+	color: #d6c700;
+}
+
+a:visited {
+	color: #C82529;
 }
 
 h1 {
-  color: navy;
-  margin-left: 20px;
+	color: #bdd4b4;
+	font-family: cursive;
+	font-size: 40px;
+}
+
+h2 {
+	color: #81ac70;
+	font-family: serif;
+	font-size: 30px;
+}
+
+h3 {
+	color: #4e7141;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+body {
+	background-color: #001C27;
+	padding: 30px;
+	border-radius: 10px;
+	color: #FEFDFC;
+}
+
+section .viewport {
+	background-color: #004c6b;
+	padding: 15px;
+	margin: 30px;
+	border-radius: 10px;
+	color: #FEFDFC;
+}
+
+aside .left {
+	background-color: #004c6b;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+	color: #FEFDFC;
+}
+
+aside .right {
+	background-color: #004c6b;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+	color: #FEFDFC;
+}
+
+/* Navbar */
+ul .navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #C82529;
+}
+
+li .navbar {
+	float: left;
+}
+
+li a .dropbtn {
+	display: inline-block;
+	color: #FEFDFC;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover .dropdown:hover {
+	background-color: #C82529;
+}
+
+li .dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
