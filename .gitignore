@@ -1,0 +1,9 @@
+pensdnd/my_secrets.py
+__pycache__
+*/__pycache__
+*/__pycache__/*
+db.sqlite3
+pensdnd/static/bin
+pensdnd/static/img
+pensdnd/static/vid
+pensdnd/static/misc
