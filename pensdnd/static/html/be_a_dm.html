@@ -1,43 +1,18 @@
-<html>
+{% extends 'static/templates/base.html' %}
+
+
+<!doctype html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="/static/css/main.css">
+	<title>
+		{% block title %}
+		PensiveDND :: Become A DM
+		{% endblock %}
+	</title>
 </head>
 
 <body>
-
-	<ul class="navbar">
-	  <li class="navbar"><a href="/">home</a></li>
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn">games</a>
-			<div class="dropdown-content">
-	      <a href="#">arvon</a>
-				<a href="#">demo</a>
-			</div>
-		</li>
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn">blogs</a>
-			<div class="dropdown-content">
-	      <a href="#">arvon</a>
-			</div>
-		</li>
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn">rules</a>
-			<div class="dropdown-content">
-				<a href="#">community</a>
-	      <a href="#">arvon</a>
-			</div>
-		</li>
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn">resources</a>
-			<div class="dropdown-content">
-				<a href="#">dnd5e</a>
-			</div>
-		</li>
-		<li class="navbar"><a href="be_a_dm.html">be a dm</a></li>
-		<li class="navbar"><a href="#">apply to game</a></li>
-	</ul>
-
-<section class="viewport">
+{% block pagecontent %}
 	<article>
 
 		<h1>Becoming a DM</h1>
@@ -83,7 +58,7 @@
 					<li><a href="https://www.dndbeyond.com/">D&D</a></li>
 					<li><a href="https://paizo.com/pathfinder">Pathfinder</a></li>
 					<li><a href="https://www.fantasyflightgames.com/en/starwarsrpg/">Star Wars FFG</a></li>
-					<li>Or any <a href="https://foundryvtt.com/packages/systems">other system</a> that Foundry supports</li>
+					<li>Or any <a href="https://foundryvtt.com/packages/systems">other system</a> that Foundry supports. You'll find that there are quite a many.</li>
 				</li>
 			</ul>
 
@@ -124,11 +99,7 @@
 		pay to play.</p>
 
 	</article>
-</section>
-
-<footer>
-	<p>do you code? <a href="https://github.com/kkerwin1/pensdnd"<img src="/static/img/github_icon.png" alt="github icon" style="width:100px;height:100px;"></a> git in!</p>
-</footer>
+{% endblock %}
 
 </body>
 

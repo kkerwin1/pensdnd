@@ -1,14 +1,18 @@
-{% extends 'base.html'}
+{% extends 'static/templates/base.html' %}
 
 
 <!doctype html>
 <html lang="en">
 <head>
-	<title>{% block title %}PensiveDND :: Home {% endblock %}</title>
+	<title>
+		{% block title %}
+		PensiveDND :: Home
+		{% endblock %}
+	</title>
 </head>
 
 <body>
-{% pagecontent %}
+{% block pagecontent %}
 	<article>
 
 		<h1>PensiveDND</h1>
