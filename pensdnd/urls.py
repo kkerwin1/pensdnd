@@ -19,6 +19,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-	path('', views.index),
-	path('be_a_dm.html', views.be_a_dm)
+	path('', views.HomePageView.as_view()),
+	path('be_a_dm.html', views.be_a_dm),
+
+	path('static/css/main.css', views.main_css)
 ]
