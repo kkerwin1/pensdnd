@@ -10,9 +10,23 @@
 </head>
 
 	<body>
-		<section class=viewport>
-			{% block pagecontent %}
-			{% endblock %}
-		</section>
+
+		<div class="row">
+			<aside class=left_viewport>
+				{% include "partials/newsbar.html" %}
+			</aside>
+
+			<article class=central_viewport>
+				{% block pagecontent %}
+				{% endblock %}
+			</article>
+
+			<aside class=right_viewport>
+				{% include "partials/blogbar.html" %}
+			</aside>
+		</div>
 	</body>
+
+	{% include "partials/footer.html" %}
+
 </html>

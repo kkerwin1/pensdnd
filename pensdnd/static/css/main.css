@@ -77,70 +77,127 @@ L Yellow
 #6b6300
 #474200
 
+Atom Color Palette
+------------------
+orange = #CF9965
+red = #E06C75
+blue = #56B6C2
+green = #8AB070
+
 */
 
 a {
-	color: #FFF12C;
-}
-
-a:hover {
-	color: #d6c700;
-}
-
-a:visited {
-	color: #C82529;
+	color: #56B6C2;
 }
 
 h1 {
-	color: #bdd4b4;
+	color: #8AB070;
 	font-family: cursive;
 	font-size: 40px;
+	text-align: center;
 }
 
 h2 {
-	color: #81ac70;
+	color: #8AB070;
 	font-family: serif;
 	font-size: 30px;
 }
 
 h3 {
-	color: #4e7141;
+	color: #8AB070;
 	font-family: sans-serif;
 	font-size: 20px;
 }
 
 body {
-	background-color: #001C27;
-	padding: 30px;
-	border-radius: 10px;
-	color: #FEFDFC;
+	background-color: #21252B;
+	color: #ABB2BF;
 }
 
-section .viewport {
-	background-color: #004c6b;
+.row {
+	display: flex;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.left_viewport {
+	background-color: #4B5364;
+	align-self: left;
+	padding: 10px;
+	margin: 10px;
+	width: 25%;
+	color: #ABB2BF;
+}
+
+.right_viewport {
+	background-color: #4B5364;
+	align-self: right;
+	padding: 10px;
+	margin: 10px;
+	width: 25%;
+	color: #ABB2BF;
+}
+
+.central_viewport {
+	display: flex;
+	align-self: center;
+	float: none;
+	padding: 10px;
+	margin: 10px;
+	background-color: #4B5364;
+	width: 50%;
+	color: #ABB2BF;
+}
+
+footer {
+	text-align: center;
+}
+
+/*
+section {
+	background-color: darkblue;
 	padding: 15px;
 	margin: 30px;
 	border-radius: 10px;
 	color: #FEFDFC;
+	width: 50%;
 }
 
-aside .left {
+.left {
+	float: left;
 	background-color: #004c6b;
 	padding: 15px;
 	margin: 15px;
 	border-radius: 10px;
 	color: #FEFDFC;
+	width: 25%;
 }
 
-aside .right {
+.right {
+	float: right;
 	background-color: #004c6b;
 	padding: 15px;
 	margin: 15px;
 	border-radius: 10px;
 	color: #FEFDFC;
+	width: 25%;
 }
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+*/
 
 /* Navbar */
+
+/*
 ul .navbar {
 	list-style-type: none;
 	margin: 0;
@@ -191,3 +248,5 @@ li .dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+*/

@@ -62,6 +62,16 @@ else:
 		}
 	}
 
+	# Static files (CSS, JavaScript, Images)
+	# https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+	STATIC_URL = 'static/'
+	STATIC_ROOT = BASE_DIR / "pensdnd/static/"
+
+	TEMPLATE_DIRS = (
+		STATIC_ROOT / 'templates',
+	)
+
 
 
 # Application definition
@@ -72,6 +82,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+	'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
 	'blog',
 ]
@@ -84,6 +95,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'pensdnd.urls'
@@ -91,7 +103,10 @@ ROOT_URLCONF = 'pensdnd.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+			STATIC_ROOT / 'templates',
+			STATIC_ROOT / 'templates/partials',
+		],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -137,11 +152,7 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / "pensdnd/static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
