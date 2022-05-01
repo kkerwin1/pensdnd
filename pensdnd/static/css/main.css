@@ -79,10 +79,11 @@ L Yellow
 
 Atom Color Palette
 ------------------
-orange = #CF9965
 red = #E06C75
-blue = #56B6C2
+orange = #CF9965
 green = #8AB070
+blue = #56B6C2
+purple = #C678DD
 
 */
 
@@ -116,6 +117,10 @@ body {
 
 .row {
 	display: flex;
+}
+
+article {
+	background-color: #7F8796;
 }
 
 .row:after {
@@ -158,46 +163,11 @@ footer {
 	text-align: center;
 }
 
-/*
-section {
-	background-color: darkblue;
-	padding: 15px;
-	margin: 30px;
-	border-radius: 10px;
-	color: #FEFDFC;
-	width: 50%;
-}
 
-.left {
-	float: left;
-	background-color: #004c6b;
-	padding: 15px;
-	margin: 15px;
-	border-radius: 10px;
-	color: #FEFDFC;
-	width: 25%;
-}
-
-.right {
-	float: right;
-	background-color: #004c6b;
-	padding: 15px;
-	margin: 15px;
-	border-radius: 10px;
-	color: #FEFDFC;
-	width: 25%;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-*/
 
 /* Navbar */
 
-/*
+
 ul .navbar {
 	list-style-type: none;
 	margin: 0;
