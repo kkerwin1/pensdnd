@@ -1,0 +1,81 @@
+{% extends 'static/templates/base.html' %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>
+		{% block title %}
+		PensiveDND :: Volunteer
+		{% endblock %}
+	</title>
+</head>
+
+<body>
+{% block pagecontent %}
+	<section>
+
+		<h1>How to Volunteer</h1>
+
+		<p>Depending on your interests and skills, there are potentially inumerable
+			ways to contribute, and far more than anyone can think of. The following
+			immediately come to mind. However, if you have other skills, by all means,
+			reach out to Arvon or another DM, and we can dream together about putting
+			them to use!</p>
+
+		<article>
+			<h2>Play!</h2>
+			<p>The first and most-important way to contribute to the community is to
+				play with us. Playing D&D and other tabletop fantasy games is such a
+				fulfilling and satisfying experience. There's strategy. There's story
+				lines. There's drama and literature. Hell, done right, D&D might be an
+				effective and fun way to homeschool children.</p>
+
+				<p>But D&D is for more than just kids. It is, in fact, seeing quite a
+				resurgence in popularity among the 20-40 age group, especially with
+				internet hits like Critical Role sparking curiosity. So, come see what
+				the buzz is about, and join a game.</p>
+		</article>
+
+		<article>
+			<h2>Map Drawing</h2>
+			<p>Probably the most time-consuming aspect of DM prep is the creation of
+				detailed dungeon maps. If you like drawing, placing sprites, and
+				imagining how a location might look, this might be an appealing hobby
+				for you.</p>
+
+			<p>Due to the sensitive nature of this role, it should only be done by
+				players in games other than the ones that they actively play.</p>
+		</article>
+
+		<article>
+			<h2>Coding</h2>
+			<p>This little project runs on code. More-specifically, it runs on HTML,
+				CSS, JS, Python, Django, PostgresQL, and Linux. But code can only do so
+				much without people to maintain and update it.</p>
+
+				<p>If you happen to have some of these skills, or would like to learn,
+					the project could use your help.</p>
+		</article>
+
+		<article>
+			<h2>Graphic Design</h2>
+			<p>Arvon, unfortunately, lacks any skill in the visual arts. If you're
+				able to create logos and accompanying art to take a website to the next
+				level, then we certainly have need of your abilities!</p>
+		</article>
+
+		<article>
+			<h2>Becoming a DM</h2>
+			{% url 'pensdnd:BeADM' as the_url %}
+			<p>In listening to and watching the guild, my honest impression is that
+				there is more demand to play tabletop games than is able to be met by
+				a single recurring session of D&D. Moreover, being a DM is quite rewarding, as
+				well. For more information, see <a href="{{ the_url }}">Be a DM</a>.
+		</article>
+
+	</section>
+{% endblock %}
+
+</body>
+</html>

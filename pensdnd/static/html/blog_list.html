@@ -1,0 +1,30 @@
+{% extends 'static/templates/base.html' %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>
+		{% block title %}
+		PensiveDND :: Blog Posts
+		{% endblock %}
+	</title>
+</head>
+
+<body>
+{% block pagecontent %}
+	<section>
+
+		{% for post in post_list %}
+		<article>
+			<h3>{{ post.title }}</h3>
+			<p>{{ post.author }} | {{ post.created_on }}</p>
+			<p>{{ post.content|slice:":200" }}
+			<a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More</a>
+		</article>
+
+	</section>
+{% endblock %}
+
+</body>
+</html>

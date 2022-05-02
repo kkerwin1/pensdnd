@@ -1,4 +1,4 @@
-"""pensdnd URL Configuration
+"""application URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -14,14 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from . import views
-from django.conf import settings
-from django.conf.urls.static import static
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-	path('', views.HomePageView.as_view()),
-	path('be_a_dm.html', views.BeADM.as_view()),
-	path('blog', include('blog.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]

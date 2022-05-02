@@ -1,0 +1,27 @@
+{% extends 'static/templates/base.html' %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>
+		{% block title %}
+		PensiveDND :: Blog :: {{ post.title }}
+		{% endblock %}
+	</title>
+</head>
+
+<body>
+{% block pagecontent %}
+	<section>
+
+			<h2>{{ post.title }}</h2>
+			<p>{{ post.author }} | {{ post.created_on }}</p>
+
+			<p>{{ post.content | safe }}</p>
+
+	</section>
+{% endblock %}
+
+</body>
+</html>
