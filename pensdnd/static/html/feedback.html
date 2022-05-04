@@ -1,0 +1,42 @@
+{% extends base.html %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>
+		{% block title %}
+		PensiveDND :: Feedback
+		{% endblock %}
+	</title>
+</head>
+
+<body>
+{% block pagecontent %}
+	<section>
+
+		<p>PensiveDND is a safe place where your feedback is appreciated. You may
+		choose to remain anonymous if you wish, or you may choose to identify
+		yourself.</p>
+
+		<p>Acceptable topics of feedback include the website, roleplay concerns,
+		concerns regarding the balance of roleplay vs combat, inappropriate behavior,
+		and anything, really. Feedback may be shared with Pensive leadership, but is
+		otherwise kept confidential.</p>
+
+		<p>~Arvon</p>
+
+		{% for field in form %}
+			<div class="fieldWrapper">
+				{{ field.errors }}
+				{{ field.label_tag }} {{ field }}
+				{% if field.help_text %}
+					<p class="help">{{ field.help_text|safe }}</p>
+				{% endif %}
+			</div>
+		{% endfor %}
+
+	</section>
+{% endblock %}
+
+</body>
+</html>
