@@ -7,7 +7,7 @@ def get_feedback(request):
 	if request.method is 'POST':
 		form = FeedbackForm(request.POST)
 		if form.is_valid():
-			returnResponseRedirect('/thanks/')
+			returnResponseRedirect('/thanks_feedback/')
 	else:
 		form = FeedbackForm()
 	return render(request, 'feedback.html', {'form': form})

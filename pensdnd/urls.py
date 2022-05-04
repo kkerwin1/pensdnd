@@ -24,4 +24,6 @@ urlpatterns = [
 	path('', views.HomePageView.as_view()),
 	path('be_a_dm.html', views.BeADM.as_view()),
 	path('blog', include('blog.urls')),
+	path('feedback', include('feedback.urls')),
+	path('application', include('application.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,0 +1,47 @@
+{% extends base.html %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>
+		{% block title %}
+		PensiveDND :: Game Application
+		{% endblock %}
+	</title>
+</head>
+
+<body>
+{% block pagecontent %}
+	<section>
+
+		<p>Welcome to our game application! To keep this fair, since everyone has
+			different work schedules, everyone who applies on the same day has an equal
+			chance of being selected, and a random number is rolled instead of noting
+			the time on the clock when the application is filed, with lower numbers
+			favored.</p>
+
+		<p>Please complete and submit the application below for consideration.</p>
+
+		<p>Regarding the question of player gender: It is my belief that a successful
+			social group is a diverse one. As D&D has such a bad rap of attracting only
+			men the question is asked to facilitate the creation of a polygendered
+			group. Please feel free not to answer if you prefer, although you may have
+			to type something into the field.</p>
+
+		<p>Guild leadership: please type yes/no into the appropriate field.</p>
+
+		{% for field in form %}
+			<div class="fieldWrapper">
+				{{ field.errors }}
+				{{ field.label_tag }} {{ field }}
+				{% if field.help_text %}
+					<p class="help">{{ field.help_text|safe }}</p>
+				{% endif %}
+			</div>
+		{% endfor %}
+
+	</section>
+{% endblock %}
+
+</body>
+</html>
