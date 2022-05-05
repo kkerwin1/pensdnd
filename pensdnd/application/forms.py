@@ -10,6 +10,7 @@ class ApplicationForm(forms.Form):
 	dnd_experience = forms.CharField(unique=False)
 	describe_your_character = forms.Charfield(unique=False)
 	player_gender = forms.Charfield(unique=False)
+	describe_your_personality = forms.Charfield(unique=False)
 	guild_leadership = forms.Charfield(unique=False)
 
 	class Meta:
