@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .forms import FeedbackForm
-from api.admin_forms import AdminForm
 
 # Register your models here.
 
