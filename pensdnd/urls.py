@@ -20,9 +20,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
 	path('', views.HomePageView.as_view()),
-	path('be_a_dm.html', views.BeADM.as_view()),
+    path('admin/', admin.site.urls),
+	path('be_a_dm', views.BeADM.as_view()),
 	path('blog', include('blog.urls')),
 	path('feedback', include('feedback.urls')),
 	path('application', include('application.urls'))
