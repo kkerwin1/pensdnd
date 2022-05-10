@@ -172,31 +172,31 @@ footer {
 
 
 ul.navbar {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #C82529;
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4B5364;
 }
 
 li.navbar {
-	float: left;
+  float: left;
 }
 
-li a.dropbtn {
-	display: inline-block;
-	color: #FEFDFC;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+li.navbar a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-li a:hover .dropdown:hover {
-	background-color: #C82529;
+li.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #C678DD;
 }
 
-li .dropdown {
-	display: inline-block;
+li.dropdown {
+  display: inline-block;
 }
 
 .dropdown-content {
@@ -216,7 +216,7 @@ li .dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #56B6C2;}
 
 .dropdown:hover .dropdown-content {
   display: block;

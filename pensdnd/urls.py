@@ -25,5 +25,9 @@ urlpatterns = [
 	path('be_a_dm', views.BeADM.as_view()),
 	path('blog', include('blog.urls')),
 	path('feedback', include('feedback.urls')),
-	path('application', include('application.urls'))
+	path('application', include('application.urls')),
+	path('guild_rules', views.GuildRules.as_view()),
+	path('community_rules', views.CommunityRules.as_view()),
+	path('arvon_rules', views.ArvonRules.as_view()),
+	path('volunteer', views.Volunteer.as_view()),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
