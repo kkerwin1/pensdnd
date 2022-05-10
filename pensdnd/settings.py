@@ -108,6 +108,9 @@ TEMPLATES = [
         'DIRS': [
 			STATIC_ROOT / 'templates',
 			STATIC_ROOT / 'templates/partials',
+			os.path.join(BASE_DIR, 'application', 'templates'),
+			os.path.join(BASE_DIR, 'blog', 'templates'),
+			os.path.join(BASE_DIR, 'feedback', 'templates'),
 		],
         'APP_DIRS': True,
         'OPTIONS': {
