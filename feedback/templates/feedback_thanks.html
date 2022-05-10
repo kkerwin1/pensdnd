@@ -1,0 +1,35 @@
+{% extends base.html %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>
+		{% block title %}
+		PensiveDND :: Feedback :: Thank You
+		{% endblock %}
+	</title>
+</head>
+
+<body>
+{% block pagecontent %}
+	<section>
+		<article>
+			<p>Thank you for taking the time to fill out our feedback form.</p>
+
+			<p>Depending on the nature of your feedback, one of many actions could be
+			taken:</p>
+
+			<ul>
+				<li>If your feedback is an idea to improve the website, you may see your
+				idea show up as a <a href="https://github.com/kkerwin1/pensdnd/projects?type=beta">Project</a>
+				on the website's Github page.</li>
+				<li>If your feedback is a bug with the website, you may see your bug show
+				up as an <a href="https://github.com/kkerwin1/pensdnd/issues">Issue</a> on the website's Github page.</li>
+				<li>If your feedback is a personnel issue, it will be referred leadership.</li>
+			</ul>
+		</article>
+	</section>
+{% endblock %}
+
+</body>
+</html>

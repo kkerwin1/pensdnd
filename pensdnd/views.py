@@ -14,7 +14,7 @@ class CommunityRules(TemplateView):
 	template_name = "static/html/community_rules.html"
 
 class ArvonRules(TemplateView):
-	template_name = "/static/html/arvon_rules.html"
+	template_name = "static/html/arvon_rules.html"
 
 class Volunteer(TemplateView):
-	template_name = "/static/html/volunteer.html"
+	template_name = "static/html/volunteer.html"
