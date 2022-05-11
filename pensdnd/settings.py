@@ -66,7 +66,7 @@ else:
 	# https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 	STATIC_URL = 'static/'
-	STATIC_ROOT = BASE_DIR / "pensdnd/static/"
+	STATIC_ROOT = BASE_DIR / "pensdnd/"
 
 	TEMPLATE_DIRS = (
 		STATIC_ROOT / 'templates',
@@ -106,6 +106,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
+			STATIC_ROOT,
 			STATIC_ROOT / 'templates',
 			STATIC_ROOT / 'templates/partials',
 			os.path.join(BASE_DIR, 'application', 'templates'),
