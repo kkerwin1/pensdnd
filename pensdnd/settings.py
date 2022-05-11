@@ -53,7 +53,7 @@ else:
 	DEBUG = True
 
 	SECRET_KEY = keychain.devel_key
-	ALLOWED_HOSTS = ["192.168.1.19",]
+	ALLOWED_HOSTS = ["192.168.1.19","localhost","127.0.0.1"]
 
 	DATABASES = {
 		'default': {
