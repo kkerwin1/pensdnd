@@ -1,0 +1,46 @@
+{% extends 'static/templates/base.html' %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>
+		{% block title %}
+		PensiveDND :: 404
+		{% endblock %}
+	</title>
+</head>
+
+<body>
+{% block pagecontent %}
+	<section>
+
+		<h1>404.</h1>
+
+		You cast Find <del>Traps</del> Webpages.
+
+		<article>
+			<h3>Find <del>Traps</del> Webpages</h3><br>
+			<i>2nd level divinitation</i><br>
+			<p>
+				<b>Casting Time</b>: 1 action<br>
+				<b>Range</b>: 120 feet<br>
+				<b>Components</b>: V S
+			</p>
+			<p>You sense the presence of any webpage within range that is within
+			line of sight. A webpage, for the purpose of this spell, includes anything
+			that would inflict a sudden case of knowledge via computer screen whilst
+			browsing the web, whether or not that knowledge be in fact true or "fake
+			news".</p>
+			<p>Oh, and here we get to the good part. This spell merely reveals that a
+			webpage is present. You don't learn the location nor the URL of each webpage,
+			but you do see this 404 error.</p>
+		</article>
+
+		You curse yourself, again, for having taken this useless spell.
+
+	</section>
+{% endblock %}
+
+</body>
+</html>
