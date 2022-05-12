@@ -13,8 +13,6 @@ def get_feedback(request):
 	else:
 		form = FeedbackForm()
 		#form.fields['created_on'].widget = forms.HiddenInput()
-		form.fields['slug'].widget = forms.HiddenInput()
-		form.fields['slug'].required = False
 	return render(request, 'templates/feedback.html', {'form': form})
 
 class FeedbackThanks(TemplateView):
