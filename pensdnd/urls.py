@@ -30,5 +30,4 @@ urlpatterns = [
 	path('community_rules/', views.CommunityRules.as_view()),
 	path('arvon_rules/', views.ArvonRules.as_view()),
 	path('volunteer/', views.Volunteer.as_view()),
-	path('getname/', include('getname.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
