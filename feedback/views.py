@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import FeedbackForm
 from django.views.generic import TemplateView
 from django import forms
@@ -9,7 +9,7 @@ def get_feedback(request):
 	if request.method == 'POST':
 		form = FeedbackForm(request.POST)
 		if form.is_valid():
-			returnResponseRedirect('/feedback_thanks')
+			return redirect('/feedback/thanks/')
 	else:
 		form = FeedbackForm()
 		#form.fields['created_on'].widget = forms.HiddenInput()
