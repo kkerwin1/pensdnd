@@ -1,2 +1,2 @@
 # pensdnd
-Django 4 site, hosting Foundry VTT for Pensive
+Django 4 site, hosting Foundry VTT for Pensive WoW guild
