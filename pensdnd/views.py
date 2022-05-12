@@ -18,3 +18,6 @@ class ArvonRules(TemplateView):
 
 class Volunteer(TemplateView):
 	template_name = "static/html/volunteer.html"
+
+class HowToDemo(TemplateView):
+	template_name = "static/html/how_to_play_demo.html"

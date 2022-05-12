@@ -30,4 +30,5 @@ urlpatterns = [
 	path('community_rules/', views.CommunityRules.as_view()),
 	path('arvon_rules/', views.ArvonRules.as_view()),
 	path('volunteer/', views.Volunteer.as_view()),
+	path('games/how_to_demo/', views.HowToDemo.as_view())
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

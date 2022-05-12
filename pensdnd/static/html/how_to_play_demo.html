@@ -1,0 +1,56 @@
+{% extends 'static/templates/base.html' %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>
+		{% block title %}
+		PensiveDND :: How to Play the Demo
+		{% endblock %}
+	</title>
+</head>
+
+<body>
+{% block pagecontent %}
+	<section>
+
+		<article>
+		<h3>How to Play the Demo</h3>
+
+		<p>Graciously, the folks over at Foundry included a demo mode for you to try out.
+		It only lasts 30 mins, after which it resets. I'm going to go rules-lite on
+		this, and focus just on how to use the interface.</p>
+
+		<p>1. Select the name of the character you want to play. To keep things simple,
+		I just named them after their classes, "Wizard" is a wizard, "Rogue" is a rogue,
+		etc. No passwords necessary.</p>
+
+		<p>2. To target an enemy (or an ally), mouse over them and hit "T" on your keyboard.
+		Hit "T" again to untarget. You can target more than one character at a time,
+		depending on the ability.</p>
+
+		<p>3. Click the button on your action bar corresponding to your action.</p>
+
+		<p>4. If your action is an attack, it will break down into two kinds: a hit, or
+		a save.</p>
+
+		<p>4a. If your action is a HIT, you roll, and you're trying to beat your target's
+		armor class. If you do, the computer will say that you hit. Then you get to
+		hit the damage button. If you don't hit, the computer will say miss. Then you
+		don't hit the damage button.</p>
+
+		<p>4b. If your action is a save, your target rolls, not you. And this next part
+		is confusing, I know: you want the results of the target's roll to be "Failure".
+		You don't want the target to "Succeed". Because remember, it's not you that's
+		succeeding; it's the target.</p>
+
+		<p>That's probably enough for now. If you like playing and want to join up,
+		try filling out an application, or pestering someone to DM a new group!</p>
+		</article>
+
+	</section>
+{% endblock %}
+
+</body>
+</html>
