@@ -1,4 +1,4 @@
-{% extends base.html %}
+{% extends 'static/templates/base.html' %}
 
 <!doctype html>
 <html lang="en">
@@ -28,9 +28,23 @@
 			group. Please feel free not to answer if you prefer, although you may have
 			to type something into the field.</p>
 
-		<p>Guild leadership: please type yes/no into the appropriate field.</p>
+		<p>Guild leadership: please simply check the box.</p>
 
-		{{ form.as_p }}
+		<form method='POST'>
+			{% csrf_token %}
+			{% for field in form %}
+	    <div class="fieldWrapper">
+				<p>
+	        {{ field.errors }}
+	        	{{ field.label_tag }} <br> {{ field }}
+	        	{% if field.help_text %}
+	        		<p class="help">{{ field.help_text|safe }}</p>
+	        	{% endif %}
+				</p>
+	    </div>
+			{% endfor %}
+			<input type="submit" value="Submit">
+		</form>
 
 	</section>
 {% endblock %}

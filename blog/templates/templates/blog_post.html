@@ -6,7 +6,7 @@
 <head>
 	<title>
 		{% block title %}
-		PensiveDND :: Blog Posts
+		PensiveDND :: Blog :: {{ post.title }}
 		{% endblock %}
 	</title>
 </head>
@@ -15,12 +15,11 @@
 {% block pagecontent %}
 	<section>
 
-		{% for post in post_list %}
 		<article>
-			<h3>{{ post.title }}</h3>
+			<h2>{{ post.title }}</h2>
 			<p>{{ post.author }} | {{ post.created_on }}</p>
-			<p>{{ post.content|slice:":200" }}
-			<a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More</a>
+
+			<p>{{ post.content | safe }}</p>
 		</article>
 
 	</section>
