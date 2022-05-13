@@ -32,7 +32,7 @@ if "adjutant" in cwd:
 
 	DEBUG = False
 	SECRET_KEY = keychain.secret_key
-	ALLOWED_HOSTS = ["pensdnd.servegame.com"]
+	ALLOWED_HOSTS = ["pensivednd.servegame.com", "localhost", "127.0.0.1"]
 	DATABASES = {
 		"default": {
 			"ENGINE": "django.db.backends.postgresql",
