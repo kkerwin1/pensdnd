@@ -44,6 +44,13 @@ if "adjutant" in cwd:
 		}
 	}
 
+	STATIC_URL = 'static/'
+	STATIC_ROOT = BASE_DIR / "pensdnd/static/"
+
+	TEMPLATE_DIRS = (
+		STATIC_ROOT / 'templates',
+	)
+
 else:
 	"""
 	We're in development mode. Use the development key and sqlite.
