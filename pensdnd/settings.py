@@ -32,7 +32,7 @@ if "adjutant" in cwd:
 
 	DEBUG = False
 	SECRET_KEY = keychain.secret_key
-	ALLOWED_HOSTS = ["pensivednd.servegame.com", "localhost", "127.0.0.1"]
+	ALLOWED_HOSTS = ["pensivednd.servegame.com", "localhost", "127.0.0.1", "192.168.1.19"]
 	DATABASES = {
 		"default": {
 			"ENGINE": "django.db.backends.postgresql",
@@ -113,8 +113,6 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-			STATIC_ROOT / 'templates',
-			STATIC_ROOT / 'templates/partials',
 			os.path.join(BASE_DIR, 'application', 'templates'),
 			os.path.join(BASE_DIR, 'blog', 'templates'),
 			os.path.join(BASE_DIR, 'feedback', 'templates'),
